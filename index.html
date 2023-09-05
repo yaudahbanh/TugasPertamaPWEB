@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokoknya Tabel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: black 1px solid;
+    }
+  </style>
+  <body class="bg-amber-100">
+    <div class="flex justify-center">
+      <h1 class="font-inter pt-4 text-lg">Tugas Pertemuan ke 2</h1>
+    </div>
+    <br />
+    <div class="flex justify-center">
+      <img
+        src="alice.png"
+        alt="Profile"
+        class="w-60 h-60 rounded-full border-black border-4"
+        width="400px"
+        height="400px"
+      />
+    </div>
+    <div class="flex justify-center font-inter">
+      <h2 class="py-4 px-3">
+        Hi there, my name is Tunas Abdi Pranata. This is my first task from Web
+        Programing class using HTML and Tailwind CSS.
+      </h2>
+    </div>
+    <div class="flex justify-center font-inter">
+      <div>
+        <h2 class="py-1 px-3">Anyway, this is list of my hobbies:</h2>
+        <ul class="list-disc px-8 auto">
+          <li>Cybersecurity</li>
+          <li>Penetration Testing</li>
+          <li>Ethical Hacking</li>
+        </ul>
+        <h2 class="py-1 px-3">
+          This are sample of responsive table with Tailwind CSS.
+        </h2>
+      </div>
+    </div>
+    <br />
+    <div class="flex justify-center">
+      <table
+        class="table-auto mt-1 w-1/2 max-w-screen-lg font-inter border-3 border-indigo-700"
+      >
+        <thead>
+          <tr>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left leading-4 text-gray-500 tracking-wider border-indigo-700"
+            >
+              Song
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left leading-4 text-gray-500 tracking-wider border-indigo-700"
+            >
+              Artist
+            </th>
+            <th
+              class="px-6 py-3 bg-gray-50 text-left leading-4 text-gray-500 tracking-wider border-indigo-700"
+            >
+              Year
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">
+              The Sliding Mr. Bones (Next Stop, Pottersville)
+            </td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">
+              Malcolm Lockyer
+            </td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">1961</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">Witchy Woman</td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">The Eagles</td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">1972</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">Shining Star</td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">
+              Earth, Wind, and Fire
+            </td>
+            <td class="px-6 py-3 bg-gray-50 border-indigo-700">1975</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex justify-center font-semibold">
+      <h1 class="py-3 px-3">Ask a Question</h1>
+    </div>
+    <div class="flex justify-center">
+      <div class="font-inter w-1/2">
+        <form action="#" method="POST" class="bg-white p-4 rounded shadow-md">
+          <div class="mb-4">
+            <label
+              for="question"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Your Question:</label
+            >
+            <textarea
+              id="question"
+              name="question"
+              rows="4"
+              class="w-full px-3 py-2 border rounded-md text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2"
+              >Your Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-3 py-2 border rounded-md text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-gray-700 text-sm font-bold mb-2"
+              >Your Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-3 py-2 border rounded-md text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div class="mb-4">
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="contactme" class="flex justify-center">
+      <h2 class="py-4 px-3 font-semibold">Connect with me</h2>
+    </div>
+    <div class="flex justify-center mt-[-20px]">
+      <a href="" target="_blank"
+        ><img
+          src="linkedin.png"
+          alt="Linkedin"
+          class="rounded-md w-40 h-20 px-3"
+      /></a>
+      <a href="" target="_blank"
+        ><img src="github.png" alt="Linkedin" class="rounded-md w-40 h-20 px-3"
+      /></a>
+    </div>
+  </body>
+</html>
